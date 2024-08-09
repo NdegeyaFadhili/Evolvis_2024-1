@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f3f3f3;
+    user-select: none;
 }
 .navbar {
     display: flex;
@@ -20,11 +22,12 @@ body {
     color: black;
 }
 .navbar a.active {
-    background-color: #4CAF50;
+    background-color: rgba(0, 179, 255, 0.76);
     color: white;
 }
 .content {
     padding: 20px;
+    text-align: center;
 }
 .profile-img {
     width: 150px;
@@ -68,7 +71,7 @@ body {
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
+    padding: 90px;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -114,4 +117,24 @@ body {
     background-color: #0056b3;
 }
 
+.custom-button {
+    background-color: #242121; 
+    border: none;             
+    color: white;             
+    padding: 15px 32px;       
+    text-align: center;      
+    text-decoration: none;    
+    display: inline-block;    
+    font-size: 16px;          
+    margin: 4px 2px;          
+    cursor: pointer;          
+    border-radius: 12px;      
+    transition-duration: 0.4s; 
+}
+
+.custom-button:hover {
+    background-color: white;  
+    color: black;             
+    border: 2px solid #2e5477; 
+}
 
