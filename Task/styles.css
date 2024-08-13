@@ -138,3 +138,57 @@ body {
     border: 2px solid #2e5477; 
 }
 
+.projects {
+    margin-top: 40px;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 45%; /* Adjust width to fit two projects in a row */
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #555;
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Slightly lift the project card on hover */
+}
+
+@media (max-width: 768px) {
+    .project {
+        width: 100%; /* Make projects full width on small screens */
+    }
+}
