@@ -72,7 +72,6 @@
         $message = htmlspecialchars(trim($_POST['message']));
 
         if (!empty($name) && !empty($message)) {
-            // Process the form data, e.g., send an email, save to a database, etc.
             echo "<script>alert('Message sent successfully!');</script>";
         } else {
             echo "<script>alert('Please fill in all fields.');</script>";
